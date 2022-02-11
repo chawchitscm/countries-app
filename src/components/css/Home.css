@@ -1,0 +1,73 @@
+.container {
+  padding: 10px;
+}
+
+.filter-container {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-input {
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px hsl(0, 0%, 91%);
+  -webkit-box-shadow: 0px 10px 10px 0px hsl(0, 0%, 91%);
+  -moz-box-shadow: 0px 10px 10px 0px hsl(0, 0%, 91%);
+}
+
+.search-input input[type=text] {
+  border: 0;
+  padding: 0 10px;
+}
+
+.search-input input[type=text]:focus {
+  outline: none;
+}
+
+.filter-container select {
+  border: 0;
+  border-radius: 5px;
+  width: 170px;
+  padding: 15px 25px;
+  box-shadow: 0px 10px 10px 0px hsl(0, 0%, 91%);
+  -webkit-box-shadow: 0px 10px 10px 0px hsl(0, 0%, 91%);
+  -moz-box-shadow: 0px 10px 10px 0px hsl(0, 0%, 91%);
+}
+
+.filter-container select:focus {
+  outline: none;
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .item-wrapper {
+  flex: 0 0 25%; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-device-width: 640px) and (max-device-width: 1024px){
+  .container .item-wrapper {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-device-width: 640px){
+  .filter-container {
+    flex-direction: column;
+  }
+
+  .filter-container select {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .country-list {
+    flex-direction: column;
+  }
+}
